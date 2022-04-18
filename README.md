@@ -3,15 +3,12 @@
 ### PaperCut-Api
 - Run papercut-api microservice along with Postgres DB for PaperCut service 
 
-papercut-api+postgres
-
-- Run papercut-api microservice for existing PaperCut Postgres DB
-
-papercut-api
+<a href="https://github.com/nicotechru/printstat/tree/main/papercut-api%2Bpostgres">papercut-api+postgres</a>
 
 ### Printstat
 
 - Run Printstat daemon, agent, database and web interface
 
-postgres+daemon+agent+webgui
+<a href="https://github.com/nicotechru/printstat/tree/main/postgres%2Bdaemon%2Bagent%2Bwebgui">postgres+daemon+agent+webgui</a>
+
 
