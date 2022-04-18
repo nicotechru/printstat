@@ -1,0 +1,4 @@
+create user printstat with password 'printstat';
+alter user printstat set search_path to public,pg_catalog;
+
+grant usage on schema public to printstat;

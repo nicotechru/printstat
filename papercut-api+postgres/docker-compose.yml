@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    container_name: db
+    restart: always
+    environment:
+      POSTGRES_USER: papercut
+      POSTGRES_PASSWORD: papercut
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
+      - ./postgres/initdb.sh:/docker-entrypoint-initdb.d/initdb.sh
+      - ./postgres/init.before.script:/docker-entrypoint-initdb.d/init.before.script
+  papercut-api:
+    image: nicotechru/papercut-api
+    container_name: papercut-api
+    restart: always
+    env_file:
+      - ./papercut-api/api.env
+    ports:
+      - 8000:8000
+      - 8080:8080
+    volumes:
+      - ./papercut-api/data:/papercut-api
+    depends_on:
+      - db
