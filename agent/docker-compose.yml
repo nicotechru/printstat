@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  agent:
+    image: nicotechru/printstat-agent:1.0
+    container_name: agent
+    restart: always
+    env_file:
+      - ./agent/agent.env
+    volumes:
+      - /root/.ssh:/root/.ssh
+      - ./agent/data:/printstat/agent
+    network_mode: host

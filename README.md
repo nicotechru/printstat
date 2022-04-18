@@ -12,3 +12,8 @@
 <a href="https://github.com/nicotechru/printstat/tree/main/postgres%2Bdaemon%2Bagent%2Bwebgui">postgres+daemon+agent+webgui</a>
 
 
+- Run additional Printstat agent node
+
+<a href="https://github.com/nicotechru/printstat/tree/main/agent">agent</a>
+
+
