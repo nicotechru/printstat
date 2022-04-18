@@ -42,7 +42,6 @@ services:
     environment:
       API_URL: http://vm-printstat.nicotech.ru/daemon
       WS_URL: ws://vm-printstat.nicotech.ru/daemon/websocket
-      NETWORK_RANGE_SHOW_PORTS: "true"
     ports:
       - 80:80
 #      - 443:443
