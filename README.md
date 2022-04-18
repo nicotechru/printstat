@@ -1,9 +1,7 @@
 # Printstat docker-compose resources
 
-### PaperCut-Api
-- Run papercut-api microservice along with Postgres DB for PaperCut service 
-
-<a href="https://github.com/nicotechru/printstat/tree/main/papercut-api%2Bpostgres">papercut-api+postgres</a>
+### Quick Start guide
+https://github.com/nicotechru/printstat/wiki/Quick-Start
 
 ### Printstat
 
@@ -16,4 +14,9 @@
 
 <a href="https://github.com/nicotechru/printstat/tree/main/agent">agent</a>
 
+
+### PaperCut-Api
+- Run papercut-api microservice along with Postgres DB for PaperCut service
+
+<a href="https://github.com/nicotechru/printstat/tree/main/papercut-api%2Bpostgres">papercut-api+postgres</a>
 

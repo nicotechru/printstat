@@ -40,12 +40,12 @@ services:
     container_name: webgui
     restart: always
     environment:
-      API_URL: https://vm-printstat.nicotech.ru/daemon
-      WS_URL: wss://vm-printstat.nicotech.ru/daemon/websocket
+      API_URL: http://vm-printstat.nicotech.ru/daemon
+      WS_URL: ws://vm-printstat.nicotech.ru/daemon/websocket
       NETWORK_RANGE_SHOW_PORTS: "true"
     ports:
-#      - 80:80
-      - 443:443
+      - 80:80
+#      - 443:443
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
 #      - ./nginx/ssl/:/etc/ssl/nicotech.ru/
