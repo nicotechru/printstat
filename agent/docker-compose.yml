@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   agent:
-    image: nicotechru/printstat-agent:1.0
+    image: nicotechru/printstat-agent
     container_name: agent
     restart: always
     env_file:

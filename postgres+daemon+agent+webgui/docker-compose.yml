@@ -12,7 +12,7 @@ services:
     volumes:
       - ./postgres/data:/var/lib/postgresql/data
   daemon:
-    image: nicotechru/printstat-daemon:1.0
+    image: nicotechru/printstat-daemon
     container_name: daemon
     restart: always
     env_file:
@@ -24,7 +24,7 @@ services:
     depends_on:
       - db
   agent:
-    image: nicotechru/printstat-agent:1.0
+    image: nicotechru/printstat-agent
     container_name: agent
     restart: always
     env_file:
@@ -36,7 +36,7 @@ services:
     depends_on:
       - daemon
   webgui:
-    image: nicotechru/printstat-webgui:1.0
+    image: nicotechru/printstat-webgui
     container_name: webgui
     restart: always
     environment:
