@@ -1,5 +1,6 @@
 {
   "outputFile": "/printstat/agent/walk.zip",
+  "threads": 5,
   "ips": [
     "172.100.1.83", "172.100.1.188"
   ],
